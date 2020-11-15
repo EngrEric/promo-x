@@ -2,25 +2,24 @@ const mongoose = require("mongoose");
 
 const promoSchema = mongoose.Schema(
   {
-    name: {
+    promo_name: {
+      type: String,
+      required: true,
+    },
+    promo_text: {
+      type: String,
+      required: true,
+    },
+    promo_instruction: {
       type: String,
       required: true,
     },
     imageData: {
       type: Object,
-      required: true,
     },
-    type: {
+    promo_greeting_text: {
       type: String,
       required: true,
-    },
-    validTill: {
-      type: Date,
-      required: true,
-    },
-    totalRedemption: {
-      type: String,
-      default: "user",
     },
   },
   {

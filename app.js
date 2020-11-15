@@ -27,8 +27,8 @@ mongoose
   })
   .then(() => {
     console.log("Connected to MongoDB");
-    app.listen(3000, () => {
-      console.log("server started @ localhost:3000");
+    app.listen(5000, () => {
+      console.log("server started @ localhost:5000");
     });
   })
   .catch((err) => {
